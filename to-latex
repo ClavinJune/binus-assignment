@@ -1,9 +1,8 @@
 #! /usr/bin/env bash
 
-f=$1
-
 pdflatex $1.tex
 
 rm -rf $1.aux $1.log $1.out
 
 firefox $1.pdf
+
