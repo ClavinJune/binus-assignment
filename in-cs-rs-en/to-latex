@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+pdflatex $1.tex
+
+rm -rf $1.aux $1.log $1.out textput.log
+
+firefox $1.pdf
+
